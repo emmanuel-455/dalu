@@ -1,11 +1,11 @@
-
+import React from 'react';
 import './App.css';
+import Media from './pages/Media';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-lg font-extrabold'>Dalu</h1>
-      <h2></h2>
+    <div >
+     <Media />
     </div>
   );
 }
