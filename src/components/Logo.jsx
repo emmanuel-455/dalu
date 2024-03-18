@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Logo() {
+function Logo({logo}) {
   return (
     <div>
-      <p className='text-2xl font-extrabold mb-20'>chidalu ugwu</p>
+      <p className='text-2xl font-extrabold mb-20'>{logo}</p>
     </div>
   )
 }

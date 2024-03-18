@@ -9,12 +9,14 @@ function Media() {
   return (
     <div className='px-[30px] py-[25px]'>
       <div className='flex  justify-between'>
-      <div><Logo /></div>
+        <div><Logo
+          logo="chidalu ugwu"
+        /></div>
         <div className=' md:hidden'><SideNavbar /></div>
       </div>
 
       <div className='flex'>
-        <div className='w-[25%] h-full border-r-2 hidden md:block'><Navbar /></div>
+        <div className='border-r-2 hidden md:block'><Navbar /></div>
         <MediaBody /></div>
     </div>
   )
