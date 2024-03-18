@@ -1,12 +1,20 @@
 import React from 'react';
 import './App.css';
 import Media from './pages/Media';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Work from './pages/Work';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div >
-     <Media />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route>
+          <Route path='work' element={<Work />} />
+          <Route path="media" element={<Media />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
