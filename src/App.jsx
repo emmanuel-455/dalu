@@ -3,9 +3,10 @@ import './App.css';
 import Media from './pages/Media';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Work from './pages/Work';
-import Navbar from './components/Navbar';
+
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>

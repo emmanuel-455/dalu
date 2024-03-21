@@ -1,18 +1,17 @@
-import React from 'react'
-
+import React from 'react';
 
 function Navbar() {
   return (
-    <div className='pr-28 border-r-[0px] '>
-      <ul className=' h-screen'>
-        <li className='py-2 text hover:font-extrabold hover:border-b-[3px] mb-1 w-[50px] border-black'><a href="">about</a></li>
-        <li className='py-2 text hover:font-extrabold hover:border-b-[3px] mb-1 w-[50px] border-black'><a href="/work">works</a></li>
-        <li className='py-2 text hover:font-extrabold hover:border-b-[3px] mb-1 border-black'><a href="/media">media diary</a></li>
-        <li className='py-2 text hover:font-extrabold hover:border-b-[3px] mb-1 w-[60px] border-black'><a href="">resume</a></li>
-        <li className='py-2 text hover:font-extrabold hover:border-b-[3px] mb-1 w-[50px] border-black'><a href="">email</a></li>
+    <div className='pr-28 border-r'>
+      <ul className='h-screen'>
+        <li className='py-[px] mb-[10px] text-[15px] hover:font-extrabold hover:border-b-[3px] w-[50px] border-black'><a href="/about">about</a></li>
+        <li className='py-[px] mb-[10px] text-[15px] hover:font-extrabold hover:border-b-[3px] w-[50px] border-black'><a href="/work">works</a></li>
+        <li className='py-[px] mb-[10px] text-[15px] hover:font-extrabold hover:border-b-[3px] border-black text-nowrap'><a href="/media">media diary</a></li>
+        <li className='py-[px] mb-[10px] text-[15px] hover:font-extrabold hover:border-b-[3px] w-[60px] border-black'><button type="button">resume</button></li>
+        <li className='py-[px] mb-[10px] text-[15px] hover:font-extrabold hover:border-b-[3px] w-[50px] border-black'><button type="button">email</button></li>
       </ul>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;

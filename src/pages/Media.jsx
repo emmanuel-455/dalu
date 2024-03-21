@@ -1,14 +1,13 @@
 import React from 'react'
-import MediaBody from '../components/MediaBody'
 import Navbar from '../components/Navbar'
 import Logo from '../components/Logo'
 import SideNavbar from '../components/SideNavbar'
-
+import MediaContent from '../components/MediaContent'
 
 function Media() {
   return (
-    <div className='px-[30px] py-[25px]'>
-      <div className='flex  justify-between'>
+    <div className='px-[25px] py-[25px]'>
+      <div className='flex justify-between'>
         <div><Logo
           logo="chidalu ugwu"
         /></div>
@@ -16,8 +15,9 @@ function Media() {
       </div>
 
       <div className='flex'>
-        <div className='border-r-2 hidden md:block'><Navbar /></div>
-        <MediaBody /></div>
+        <div className=' hidden md:block'><Navbar /></div>
+        <MediaContent />
+      </div>
     </div>
   )
 }
