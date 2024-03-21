@@ -1,26 +1,26 @@
-import React from 'react'
-import MediaBody from './MediaBody'
-import mediaContent from '../mediaContent'
+import React from 'react';
+import MediaBody from './MediaBody';
+import mediaContent from '../mediaContent';
 
 function MediaContent() {
   return (
     <div className='md:pl-[100px] border-r'>
       <h1 className='font-extrabold mb-4 text-[20px] md:text-[30px]'>media diary</h1>
       <div className='w-full'>
-      {mediaContent.map((content) => {
-          return (
-            <MediaBody
-          key={content.id}
-          image={content.image}
-          hobby={content.hobby}
-          title={content.title}
-          author={content.author}
-          media={content.social}
-        />
-        )})}
+        {mediaContent.map((content) => (
+          <MediaBody
+            key={content.id}
+            image={content.image}
+            hobby={content.hobby}
+            title={content.title}
+            author={content.author}
+            media={content.social}
+          />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default MediaContent
+export default MediaContent;
+
