@@ -12,7 +12,7 @@ function App() {
         {/* Each Route should be a direct child of Routes */}
         <Route path="/" element={<About />} />
         <Route path="/work" element={<Work />} />
-        <Route path="/work" element={<Media />} />
+        <Route path="/media" element={<Media />} />
       </Routes>
     </BrowserRouter>
   );
