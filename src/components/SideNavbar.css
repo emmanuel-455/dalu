@@ -1,0 +1,8 @@
+.rotated {
+  transform: rotate(-30deg);
+  transition: transform 0.3s ease;
+}
+.same {
+  transform: rotate(60deg);
+  transition: transform 0.3s ease;
+}

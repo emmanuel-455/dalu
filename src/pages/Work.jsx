@@ -1,23 +1,34 @@
-import React from 'react'
-import Logo from '../components/Logo'
-import SideNavbar from '../components/SideNavbar'
-import Navbar from '../components/Navbar'
-
+import React from 'react';
+import Logo from '../components/Logo';
+import SideNavbar from '../components/SideNavbar';
+import Navbar from '../components/Navbar';
+import WorkProjectImg from '../components/WorkProjectImg';
+import CaseStudies from '../components/CaseStudies';
+import casestudy from '../casestudy'; // Import casestudy data
 
 function Work() {
   return (
-    <div className='px-[30px] py-[25px]'>
+    <div className='pl-[25px] pr-[6px] py-[25px]'>
       <div className='flex justify-between'>
-      <div><Logo /></div>
-        <div className='block md:hidden'><SideNavbar /></div>
+        <div>
+          <Logo logo="chidalu ugwu" />
+        </div>
+        <div className='md:hidden'>
+          <SideNavbar />
+        </div>
       </div>
 
       <div className='flex'>
-        <div className='w-[25%] hidden md:block '><Navbar /></div>
-        <h1>hello</h1></div>
+        <div className='hidden md:block'>
+          <Navbar />
+        </div>
+        <div>
+          <WorkProjectImg header="works" />
+          <CaseStudies casestudy={casestudy} /> {/* Pass casestudy data */}
+        </div>
+      </div>
     </div>
-  
-  )
+  );
 }
 
-export default Work
+export default Work;
