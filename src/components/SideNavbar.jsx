@@ -1,5 +1,5 @@
 import React from 'react';
-import Asterisk from "../asset/Asterisk.png";
+import Asterisk from "../asset/Asterisk.svg";
 import SideNavContent from './SideNavContent';
 import './SideNavbar.css'; 
 

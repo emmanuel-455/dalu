@@ -22,7 +22,7 @@ function Work() {
         <div className='hidden md:block'>
           <Navbar />
         </div>
-        <div>
+        <div className=' md:border-r md:pr-14'>
           <WorkProjectImg header="works" />
           <CaseStudies casestudy={casestudy} /> {/* Pass casestudy data */}
         </div>
