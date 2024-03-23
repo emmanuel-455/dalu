@@ -4,6 +4,7 @@ import CaseProp from './CaseProp';
 function CaseStudies(props) {
   return (
     <div className='md:pl-16 mt-7'>
+      <h1 className="text-[20px] md:text-[24px] font-extrabold mb-2">case studies</h1>
       {/* Map over casestudy data and render each case study */}
       {props.casestudy.map((study) => (
         <CaseProp
