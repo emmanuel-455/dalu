@@ -10,20 +10,18 @@ function CaseProp(props) {
         </div>
         <div>
           <p>
-            <a className='flex' href="h">
+            <a className='flex underline' href="h">
               {props.date} 
               <img src={props.next} alt="" />
             </a>
           </p>
         </div>
       </div>
-      <div className="flex items-end">
-        <img src={props.image} alt="" />
+      <div className="flex">
+        <img className='pt-6' src={props.image} alt="" />
       </div>
     </div>
   );
 }
 
 export default CaseProp;
-
-
