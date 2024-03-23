@@ -19,7 +19,7 @@ function AboutContent(props) {
         <div className='hidden md:block'>
           <Navbar />
         </div>
-        <div className='md:w-[68.2%] h-screen border-r'>
+        <div className='md:w-[68.2%] h-screen md:border-r'>
           <h1 className="block md:hidden text-[20px] font-extrabold mb-2">
             {props.header}
           </h1>
