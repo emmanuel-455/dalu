@@ -1,5 +1,5 @@
 const casestudy = [{
-  id: "1",
+  id: 1,
   project: "Fanhuddle",
   year: "2022 - 2023",
   image: require("./asset/fanhuddle project image.png"),
@@ -7,7 +7,7 @@ const casestudy = [{
   next: require("./asset/Coming soon icon.png")
 },
 {
-  id: "2",
+  id: 2,
   project: "Maplerad website & dashboard",
   year: "2022 - 2023",
   image: require("./asset/Group 25.png"),

@@ -19,7 +19,7 @@ function Navbar() {
   };
 
   return (
-    <div className='pr-[6rem] border-r'>
+    <div className='pr-[6rem] mt-24'>
       <ul className='h-screen'>
         <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "about" ? "font-extrabold border-b-[3px]" : ""} w-[50px] border-black`}
             onClick={() => handleLinkClick("about")}>
