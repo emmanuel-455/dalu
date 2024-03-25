@@ -8,25 +8,16 @@ import casestudy from '../casestudy'; // Import casestudy data
 
 function Work() {
   return (
-    <div className='pl-[25px] pr-[6px] py-[25px]'>
-      <div className='flex justify-between'>
-        <div>
-          <Logo logo="chidalu ugwu" />
-        </div>
-        <div className='md:hidden'>
-          <SideNavbar />
-        </div>
+    <div className='px-[25px] md:flex'>
+      <div className='md:inline-block py-5 md:w-[17rem] flex justify-between items-center'>
+        <Logo logo="chidalu ugwu" />
+        <div className='hidden md:block'><Navbar /></div>
+        <div className='md:hidden'><SideNavbar /></div> 
       </div>
-
-      <div className='flex'>
-        <div className='hidden md:block'>
-          <Navbar />
-        </div>
-        <div className=' md:border-r md:pr-[60px]'>
+      <div className=' md:border-r py-7 md:border-l md:pt-[140px]  md:pr-[60px]'>
           <WorkProjectImg header="works" />
           <CaseStudies casestudy={casestudy} /> {/* Pass casestudy data */}
         </div>
-      </div>
     </div>
   );
 }

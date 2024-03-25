@@ -21,17 +21,17 @@ function Navbar() {
   return (
     <div className='pr-[6rem] mt-24'>
       <ul className='h-screen'>
-        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "about" ? "font-extrabold border-b-[3px]" : ""} w-[50px] border-black`}
+        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "about" ? "font-extrabold border-b-[3px]" : ""} w-[45px] border-black`}
             onClick={() => handleLinkClick("about")}>
           <Link to="/">about</Link> {/* Use Link instead of anchor tag */}
         </li>
-        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "works" ? "font-extrabold border-b-[3px]" : ""} w-[50px] border-black`}
+        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "works" ? "font-extrabold border-b-[3px]" : ""} w-[45px] border-black`}
             onClick={() => handleLinkClick("works")}>
           <Link to="/work">works</Link> {/* Use Link instead of anchor tag */}
         </li>
-        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "media" ? "font-extrabold border-b-[3px]" : ""} w-[50px] border-black`}
+        <li className={`py-[px]  mb-[10px] text-[15px] ${activeLink === "media" ? "font-extrabold border-b-[3px]" : ""} w-[93px] border-black`}
             onClick={() => handleLinkClick("media")}>
-          <Link to="/media">media</Link> {/* Use Link instead of anchor tag */}
+          <Link to="/media">media diary</Link> {/* Use Link instead of anchor tag */}
         </li>
         {/* Add similar Link elements for other routes */}
         <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "resume" ? "font-extrabold border-b-[3px]" : ""} w-[60px] border-black`}
