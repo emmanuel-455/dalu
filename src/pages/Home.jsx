@@ -14,7 +14,7 @@ function Home() {
     const timeout = setTimeout(() => {
       setShowFirstPage(false);
       navigate('./');
-    }, 6000);
+    }, 2000);
 
     return () => clearTimeout(timeout);
   }, [navigate]);
