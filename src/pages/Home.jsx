@@ -25,7 +25,7 @@ function Home() {
         <FirstPage />
       ) : (
         <div className='px-[25px] w-full md:flex'>
-          <div className='md:inline-block py-5 md:w-[21rem] flex justify-between items-center'>
+          <div className='md:inline-block py-5 md:w-[330px] flex justify-between items-center'>
             <Logo logo="chidalu ugwu" />
             <div className='hidden md:block'><Navbar /></div>
             <div className='md:hidden'><SideNavbar /></div> 
