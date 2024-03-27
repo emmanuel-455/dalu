@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function FirstPage() {
   return (
-    <div>
-      <p></p>
+    <div className="flex justify-center items-center h-screen">
+      <p className='text-[60px] font-extrabold'>chidalu ugwu</p>
     </div>
-  )
+  );
 }
 
-export default FirstPage
+export default FirstPage;
+
