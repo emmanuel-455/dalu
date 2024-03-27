@@ -4,9 +4,9 @@ import view from "../asset/viewplay.png";
 function HomeContent() {
   return (
     <div className='flex justify-center items-center h-screen'>
-      <div className='w-full md:pr-[30rem] md:pt-[300px] md:pl-16 max-w-[800px] md:border-l md:border-r'>
+      <div className='w-[800px] md:pr-[10%] md:pt-[300px] md:pl-16  md:border-l md:border-r'>
         <div className=''>
-          <div className='h-screen'>
+          <div className='h-screen w-[100%]'>
             <h1 className='text-[15px] font-extrabold'>Creative Designer</h1>
             <div className='mt-4 text-[15px]'>
               <p>Find me on</p>
