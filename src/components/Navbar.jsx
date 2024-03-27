@@ -26,7 +26,7 @@ function Navbar() {
   }, [location]);
 
   return (
-    <div className='pr-[6rem] mt-24'>
+    <div className='mt-24'>
       <ul className='h-screen'>
         <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "home" ? "font-extrabold border-b-[3px]" : ""} w-[45px] border-black`}
             onClick={() => handleLinkClick("home")}>
