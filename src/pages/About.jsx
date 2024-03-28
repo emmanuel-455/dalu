@@ -7,7 +7,7 @@ import SideNavbar from '../components/SideNavbar';
 function About() {
   return (
 
-      <div className='px-[25px] md:flex'>
+      <div className='pl-[25px] md:flex'>
         <div className='md:inline-block py-5 border-r md:w-[14rem] flex justify-between items-center'>
           <Logo logo="chidalu ugwu" />
           <div className='hidden md:block'><Navbar /></div>

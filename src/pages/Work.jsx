@@ -14,7 +14,7 @@ function Work() {
         <div className='hidden md:block'><Navbar /></div>
         <div className='md:hidden'><SideNavbar /></div> 
       </div>
-      <div className=' py-7 md:pt-[140px]  md:pl-[120px]'>
+      <div className=' py-7 md:w-[50%] md:pt-[140px]  md:pl-[120px]'>
           <WorkProjectImg header="works" />
           <CaseStudies casestudy={casestudy} /> {/* Pass casestudy data */}
         </div>

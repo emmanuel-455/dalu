@@ -11,8 +11,8 @@ function Home() {
   return (
     <div>
      
-        <div className='px-[25px] w-full md:flex'>
-          <div className='md:inline-block py-5 md:w-[25%] flex justify-between items-center'>
+        <div className='px-[25px] md:flex'>
+          <div className='md:inline-block py-5 md:w-[14rem] flex justify-between border-r items-center'>
             <Logo logo="chidalu ugwu" />
             <div className='hidden md:block'><Navbar /></div>
             <div className='md:hidden'><SideNavbar /></div> 
