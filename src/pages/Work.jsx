@@ -9,12 +9,12 @@ import casestudy from '../casestudy'; // Import casestudy data
 function Work() {
   return (
     <div className='px-[25px] md:flex'>
-      <div className='md:inline-block py-5 md:w-[17rem] flex justify-between items-center'>
+      <div className='md:inline-block border-r py-5 md:w-[14rem] flex justify-between items-center'>
         <Logo logo="chidalu ugwu" />
         <div className='hidden md:block'><Navbar /></div>
         <div className='md:hidden'><SideNavbar /></div> 
       </div>
-      <div className=' md:border-r py-7 md:border-l md:pt-[140px]  md:pr-[60px]'>
+      <div className=' py-7 md:pt-[140px]  md:pl-[120px]'>
           <WorkProjectImg header="works" />
           <CaseStudies casestudy={casestudy} /> {/* Pass casestudy data */}
         </div>

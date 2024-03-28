@@ -9,14 +9,13 @@ const mediaContent = [{
   hobby: "Music",
   title: "The less i know the better",
   author: "Tame Impala",
-  social: "Spotify",
 },
 {
   id: 2,
   image: Movie,
   hobby: "Movie",
   title: "Oppenheimer",
-  social: "Letterboxd ",
+
   },
 {
   id: 3,
@@ -30,7 +29,6 @@ const mediaContent = [{
     hobby: "Book",
     title: "Ego is the enemy",
     author: "Ryan Holiday",
-    
     },
 ]
 

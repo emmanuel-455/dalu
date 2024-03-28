@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import Navbar from '../components/Navbar';
 import SideNavbar from '../components/SideNavbar';
 import Logo from '../components/Logo';
@@ -11,7 +10,7 @@ function Home() {
 
   return (
     <div>
-      (
+     
         <div className='px-[25px] w-full md:flex'>
           <div className='md:inline-block py-5 md:w-[25%] flex justify-between items-center'>
             <Logo logo="chidalu ugwu" />
@@ -22,7 +21,7 @@ function Home() {
             <HomeContent />
           </div>
         </div>
-      )
+      
     </div>
   );
 }

@@ -10,11 +10,11 @@ function WorkProjectImg(props) {
   const images = [Queue, Zap, View, China, Ninja, Station];
 
   return (
-    <div className='md:pl-16'>
+    <div className=''>
       <h1 className="text-[20px] md:text-[24px] font-extrabold mb-2">{props.header}</h1>
-      <div className='md:grid md:grid-cols-3 gap-4 flex flex-nowrap overflow-auto'>
+      <div className='md:grid md:grid-cols-3 gap-y-4 gap-x-4 flex flex-nowrap overflow-auto'>
         {images.map((image, index) => (
-          <img key={index} className='w-[216px]' src={image} alt={`Project ${index + 1}`} />
+          <img key={index} className='w-[250px]' src={image} alt={`Project ${index + 1}`} />
         ))}
       </div>
     </div>
