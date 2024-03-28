@@ -6,7 +6,7 @@ function HomeContent() {
     <div className='flex justify-center items-center h-screen'>
       <div className='w-[800px] pt-10 md:pt-[300px] md:pl-[120px]'>
         <div className=''>
-          <div className='h-screen w-[80%]'>
+          <div className='h-screen md:w-[80%]'>
             <h1 className='text-[15px] font-extrabold'>Creative Designer</h1>
             <div className='mt-4 text-[15px]'>
               <p>Find me on</p>

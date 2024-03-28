@@ -8,11 +8,11 @@ import casestudy from '../casestudy'; // Import casestudy data
 
 function Work() {
   return (
-    <div className='px-[25px] md:flex'>
-      <div className='md:inline-block border-r py-5 md:w-[14rem] flex justify-between items-center'>
+    <div className='pl-[25px] md:flex'>
+      <div className='md:inline-block md:border-r py-5 md:w-[14rem] flex justify-between items-center'>
         <Logo logo="chidalu ugwu" />
         <div className='hidden md:block'><Navbar /></div>
-        <div className='md:hidden'><SideNavbar /></div> 
+        <div className='md:hidden pr-[25px]'><SideNavbar /></div> 
       </div>
       <div className=' py-7 md:w-[50%] md:pt-[140px]  md:pl-[120px]'>
           <WorkProjectImg header="works" />

@@ -8,10 +8,10 @@ function About() {
   return (
 
       <div className='pl-[25px] md:flex'>
-        <div className='md:inline-block py-5 border-r md:w-[14rem] flex justify-between items-center'>
+        <div className='md:inline-block py-5 md:border-r md:w-[14rem] flex justify-between items-center'>
           <Logo logo="chidalu ugwu" />
           <div className='hidden md:block'><Navbar /></div>
-          <div className='md:hidden'><SideNavbar /></div> 
+          <div className='md:hidden pr-[25px]'><SideNavbar /></div> 
         </div>
         <AboutContent
             header="about"
