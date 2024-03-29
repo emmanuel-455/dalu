@@ -17,8 +17,8 @@ function CaseProp(props) {
           </p>
         </div>
       </div>
-      <div className="flex">
-        <img className='pt-6' src={props.image} alt="" />
+      <div>
+        <img className='pt-6 w-full h-full' src={props.image} alt="" />
       </div>
     </div>
   );
