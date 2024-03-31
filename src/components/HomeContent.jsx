@@ -4,10 +4,10 @@ import Music from "../asset/game thumbnail (2).png"
 
 function HomeContent() {
   return (
-    <div className='flex justify-center items-center h-screen'>
-      <div className='w-[600px] pt-10 md:pt-[300px] md:pl-[120px]'>
+    <div className='flex justify-center items-center '>
+      <div className='w-[600px] pt-10 md:pt-[140px] md:pl-[120px]'>
         <div className=''>
-          <div className='h-screen md:w-[80%]'>
+          <div className=' md:w-[80%]'>
             <h1 className='text-[15px] font-extrabold'>Creative Designer</h1>
             <div className='mt-4 text-[15px]'>
               <p>Find me on</p>
@@ -20,7 +20,7 @@ function HomeContent() {
               </ul>
             </div>
             <p className='flex font-bold text-[18px] items-center justify-end'>
-              View my work<img className='mr-2' src={view} alt="" />
+              View my work<img className='ml-2' src={view} alt="" />
             </p>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
               <img className='w-[50px]' src={Music} alt="" />
