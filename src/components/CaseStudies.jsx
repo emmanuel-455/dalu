@@ -21,8 +21,8 @@ function CaseStudies(props) {
       <div>
         <p className=' font-extrabold mb-2 text-[20px]'>want to see more?</p>
         <div className='flex items-center'>
-          <button className=' border flex mr-4 items-center border-black px-4 text-[16px] font-extrabold rounded-full py-2'><p className='mr-2'>Dribble</p> <img src={BB} alt="" /></button>
-          <button className=' border flex items-center border-black px-4 text-[16px] font-extrabold rounded-full py-2'><p className='mr-2'>Twitter</p> <img src={twitter} alt="" /></button>
+          <a href="https://dribbble.com/leo_lynxz/shots"><button className=' border flex mr-4 items-center border-black px-4 text-[16px] font-extrabold rounded-full py-2'><p className='mr-2'>Dribble</p> <img src={BB} alt="" /></button></a>
+          <a href="https://twitter.com/lynxz000"><button className=' border flex items-center border-black px-4 text-[16px] font-extrabold rounded-full py-2'><p className='mr-2'>Twitter</p> <img src={twitter} alt="" /></button></a>
         </div>
       </div>
     </div>

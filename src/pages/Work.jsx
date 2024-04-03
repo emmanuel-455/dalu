@@ -4,7 +4,7 @@ import SideNavbar from '../components/SideNavbar';
 import Navbar from '../components/Navbar';
 import WorkProjectImg from '../components/WorkProjectImg';
 import CaseStudies from '../components/CaseStudies';
-import casestudy from '../casestudy'; // Import casestudy data
+import casestudy from '../casestudy';
 import Footer from '../components/Footer';
 
 function Work() {
