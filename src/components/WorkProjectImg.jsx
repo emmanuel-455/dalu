@@ -9,7 +9,6 @@ import QueueBig from "../asset/Queue img.png";
 import zap from "../asset/zap.png";
 import X from "../asset/X.svg";
 
-
 function WorkProjectImg(props) {
   const images = [Queue, Zap, View, China, Ninja, Station];
   const modelImgs = [QueueBig, zap];
@@ -58,19 +57,27 @@ function WorkProjectImg(props) {
       {selectedImageIndex !== null && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
           <div className="bg-white p-8 w-full md:max-w-[40%] relative">
-            <button onClick={nextImage} className="absolute top-0 right-[40px] mt-2 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-            <button onClick={closeModal} className="absolute top-0 right-0 mt-2 mr-2 focus:outline-none">
-              <img src={X} alt="Close" className="h-6 w-6" />
-            </button>
-            <button onClick={prevImage} className="absolute top-0 right-[80px] mt-2 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
+            <div className='flex justify-between items-center mb-4'>
+              <div>
+                <p className="text-[18px] font-bold">Queues</p>
+              </div>
+              <div className="flex space-x-4">
+              <button onClick={prevImage} className="focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button onClick={nextImage} className="focus:outline-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              <button onClick={closeModal} className="focus:outline-none">
+                <img src={X} alt="Close" className="h-6 w-6" />
+              </button>
+              </div>
+              
+            </div>
             {modelImgs[selectedImageIndex] && (
               <img
                 src={modelImgs[selectedImageIndex]}
@@ -79,7 +86,7 @@ function WorkProjectImg(props) {
               />
             )}
             {description[selectedImageIndex] && (
-              <p className='text-[15px] mb-4'>{description[selectedImageIndex].des}</p>
+              <p className='text-[15px] mb-2'>{description[selectedImageIndex].des}</p>
             )}
             {description[selectedImageIndex] && description[selectedImageIndex].link && (
               <a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black break-words">{description[selectedImageIndex].link}</a>
