@@ -88,7 +88,7 @@ function WorkProjectImg(props) {
               <p className='text-[15px] mb-6'>{description[selectedImageIndex].des}</p>
             )}
             {description[selectedImageIndex] && description[selectedImageIndex].link && (
-              <p className='break-words'>See prototype on twitter ☛<a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black underline ">{description[selectedImageIndex].link}</a></p>
+              <p className='break-words'>See prototype on twitter ☛<a href="https://x.com/lynxz000/status/1748377071246627252?s=20" target="_blank" rel="noreferrer" className="text-black underline ">{description[selectedImageIndex].link}</a></p>
             )}
           </div>
         </div>
