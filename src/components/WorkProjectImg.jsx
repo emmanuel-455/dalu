@@ -17,7 +17,7 @@ function WorkProjectImg(props) {
   const description = [
     {
       des: "Queues is a little experiment that I worked on so I could learn to use origami studio, a versatile prototyping tool that makes other prototyping tools look ridiculous",
-      link: "See prototype on twitter ☛ https://x.com/lynxz000/status/1748377071246627252?s=20",
+      link: " https://x.com/lynxz000/status/1748377071246627252?s=20",
     },
     {
       des: "So what is fanhuddle about?"
@@ -56,10 +56,10 @@ function WorkProjectImg(props) {
       </div>
       {selectedImageIndex !== null && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="bg-white p-8 w-full md:max-w-[40%] relative">
+          <div className="bg-white p-8 w-full md:max-w-[45%] relative">
             <div className='flex justify-between items-center mb-4'>
               <div>
-                <p className="text-[18px] font-bold">Queues</p>
+                <p className="text-[18px] font-extrabold">Queues</p>
               </div>
               <div className="flex space-x-4">
               <button onClick={prevImage} className="focus:outline-none">
@@ -82,14 +82,14 @@ function WorkProjectImg(props) {
               <img
                 src={modelImgs[selectedImageIndex]}
                 alt={`Project ${selectedImageIndex + 1}`}
-                className="w-full mb-4"
+                className="w-full mb-[30px]"
               />
             )}
             {description[selectedImageIndex] && (
-              <p className='text-[15px] mb-2'>{description[selectedImageIndex].des}</p>
+              <p className='text-[15px] mb-6'>{description[selectedImageIndex].des}</p>
             )}
             {description[selectedImageIndex] && description[selectedImageIndex].link && (
-              <a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black break-words">{description[selectedImageIndex].link}</a>
+              <p className='break-words'>See prototype on twitter ☛<a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black underline ">{description[selectedImageIndex].link}</a></p>
             )}
           </div>
         </div>
