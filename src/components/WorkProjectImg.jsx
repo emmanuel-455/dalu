@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import Queue from "../asset/Rectangle 4.png";
-import Zap from "../asset/Rectangle 3.png";
-import View from "../asset/Rectangle 5.png";
-import China from "../asset/Rectangle 7.png";
-import Ninja from "../asset/Rectangle 8.png";
-import Station from "../asset/Rectangle 9.png";
-import QueueBig from "../asset/Queue img.png";
-import zap from "../asset/zap.png";
-import X from "../asset/X.svg";
+import QueueImage from "../asset/Rectangle 4.png";
+import ZapImage from "../asset/Rectangle 3.png";
+import ViewImage from "../asset/Rectangle 5.png";
+import ChinaImage from "../asset/Rectangle 7.png";
+import NinjaImage from "../asset/Rectangle 8.png";
+import StationImage from "../asset/Rectangle 9.png";
+import QueueBigImage from "../asset/Queue img.png";
+import zapImage from "../asset/zap.png";
+import XImage from "../asset/X.svg";
 
 function WorkProjectImg(props) {
-  const images = [Queue, Zap, View, China, Ninja, Station];
-  const modelImgs = [QueueBig, zap];
+  const images = [QueueImage, ZapImage, ViewImage, ChinaImage, NinjaImage, StationImage];
+  const modelImgs = [QueueBigImage, zapImage];
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const description = [
     {
       des: "Queues is a little experiment that I worked on so I could learn to use origami studio, a versatile prototyping tool that makes other prototyping tools look ridiculous",
-      link: " https://x.com/lynxz000/status/1748377071246627252?s=20",
+      link: "https://x.com/lynxz000/status/1748377071246627252?s=20",
     },
     {
       des: "So what is fanhuddle about?"
@@ -59,10 +59,10 @@ function WorkProjectImg(props) {
           <div className="bg-white p-8 w-full md:max-w-[45%] relative">
             <div className='flex justify-between items-center mb-4'>
               <div>
-                <p className="text-[18px] font-extrabold">Queues</p>
+                <p className="text-[18px] font-extrabold">{selectedImageIndex === 0 ? 'Queues' : 'Zap'}</p>
               </div>
               <div className="flex space-x-4">
-              <button onClick={prevImage} className="focus:outline-none">
+                <button onClick={prevImage} className="focus:outline-none">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                   </svg>
@@ -72,11 +72,10 @@ function WorkProjectImg(props) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-              <button onClick={closeModal} className="focus:outline-none">
-                <img src={X} alt="Close" className="h-6 w-6" />
-              </button>
+                <button onClick={closeModal} className="focus:outline-none">
+                  <img src={XImage} alt="Close" className="h-6 w-6" />
+                </button>
               </div>
-              
             </div>
             {modelImgs[selectedImageIndex] && (
               <img
