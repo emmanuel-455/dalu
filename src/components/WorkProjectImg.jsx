@@ -71,14 +71,18 @@ function WorkProjectImg(props) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <img
-              src={modelImgs[selectedImageIndex]}
-              alt={`Project ${selectedImageIndex + 1}`}
-              className="w-full mb-4"
-            />
-            <p className='text-[15px]'>{description[selectedImageIndex].des}</p>
-            {description[selectedImageIndex].link && (
-              <a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black">{description[selectedImageIndex].link}</a>
+            {modelImgs[selectedImageIndex] && (
+              <img
+                src={modelImgs[selectedImageIndex]}
+                alt={`Project ${selectedImageIndex + 1}`}
+                className="w-full mb-4"
+              />
+            )}
+            {description[selectedImageIndex] && (
+              <p className='text-[15px]'>{description[selectedImageIndex].des}</p>
+            )}
+            {description[selectedImageIndex] && description[selectedImageIndex].link && (
+              <a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black mt-5">{description[selectedImageIndex].link}</a>
             )}
           </div>
         </div>
