@@ -7,11 +7,12 @@ import Ninja from "../asset/Rectangle 8.png";
 import Station from "../asset/Rectangle 9.png";
 import QueueBig from "../asset/Queue img.png";
 import zap from "../asset/zap.png";
-import Asterisk from "../asset/Asterisk.svg";
+import X from "../asset/X.svg";
+
 
 function WorkProjectImg(props) {
   const images = [Queue, Zap, View, China, Ninja, Station];
-  const modelImgs = [zap, QueueBig];
+  const modelImgs = [QueueBig, zap];
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const description = [
@@ -58,20 +59,24 @@ function WorkProjectImg(props) {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
           <div className="bg-white p-8 w-full md:max-w-[40%] relative">
             <button onClick={nextImage} className="absolute top-0 right-[40px] mt-2 focus:outline-none">
-              {'>'}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </button>
             <button onClick={closeModal} className="absolute top-0 right-0 mt-2 mr-2 focus:outline-none">
-              <img src={Asterisk} alt="Close" className="h-6 w-6" />
+              <img src={X} alt="Close" className="h-6 w-6" />
             </button>
             <button onClick={prevImage} className="absolute top-0 right-[80px] mt-2 focus:outline-none">
-              {'<'}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
             </button>
             <img
               src={modelImgs[selectedImageIndex]}
               alt={`Project ${selectedImageIndex + 1}`}
               className="w-full mb-4"
             />
-            <p>{description[selectedImageIndex].des}</p>
+            <p className='text-[15px]'>{description[selectedImageIndex].des}</p>
             {description[selectedImageIndex].link && (
               <a href={description[selectedImageIndex].link} target="_blank" rel="noreferrer" className="text-black">{description[selectedImageIndex].link}</a>
             )}
