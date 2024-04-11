@@ -1,7 +1,5 @@
-import Music from "./asset/game thumbnail (2).png"
-import Movie from "./asset/game thumbnail (1).png"
-import Game from "./asset/game thumbnail (3).png"
-import Book from "./asset/game thumbnail (4).png"
+
+
 
 const mediaContent = [{
   id: 1,

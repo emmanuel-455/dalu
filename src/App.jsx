@@ -10,7 +10,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Each Route should be a direct child of Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
@@ -21,4 +20,3 @@ function App() {
 }
 
 export default App;
-
