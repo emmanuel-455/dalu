@@ -115,7 +115,7 @@ function HomeContent() {
                 <li><a href="https://instagram.com/lynxz000">Instagram</a></li>
               </ul>
             </div>
-            <p className='flex font-bold text-[18px] items-center justify-end'>
+            <p className='flex font-bold text-[15px] items-center justify-end'>
               <a className='flex' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
             </p>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>

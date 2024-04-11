@@ -40,7 +40,7 @@ function Navbar() {
             onClick={() => handleLinkClick("works")}>
           <Link to="/work">works</Link> 
         </li>
-        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "media" ? "font-extrabold border-b-[3px]" : ""} w-[108px] border-black`}
+        <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "media" ? "font-extrabold border-b-[3px]" : ""} w-[102px] border-black`}
             onClick={() => handleLinkClick("media")}>
           <Link to="/media">media diary</Link> 
         </li>
