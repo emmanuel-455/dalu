@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MusicImage from "../asset/game thumbnail (2).png";
+//import MusicImage from "../asset/game thumbnail (2).png";
 import Movie from "../asset/game thumbnail (1).png";
 import Game from "../asset/game thumbnail (3).png";
 import Book from "../asset/game thumbnail (4).png";
@@ -108,15 +108,11 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            {songInfo.songImageUrl ? (
-              <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="" />
-            ) : (
-              <img className='w-[100px] md:w-[100px]' src={MusicImage} alt="Music" />
-            )}
+            <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="Music" />
             <div className='ml-5 md:ml-[30px]'>
               <p className='bg-[#E6E6E6] px-2 py-1 inline text-[13px]'>Music</p>
-              {songInfo.songName ? (<p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>) : (<p className='text-[15px] font-bold mt-[5px]'>The less I know the better</p>)}
-              {songInfo.songArtist ? (<p className='text-[15px] mt-[3px]'>{songInfo.songArtist}</p>) : (<p className='text-[15px] mt-[3px]'>Tame Impala</p>)}
+              <p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>
+              <p className='text-[15px] mt-[3px]'>{songInfo.songArtist}</p>
             </div>
           </div>
         </div>
@@ -149,8 +145,7 @@ function MediaContent() {
             <div className='ml-5 md:ml-[30px]'>
               <p className='bg-[#E6E6E6] px-2 py-1 inline text-[13px]'>Book</p>
               <p className='text-[15px] font-bold mt-[5px]'>Ego is the enemy</p>
-              <p className='text-[15px] mt-[3px]'>Ryan Holiday
-              </p>
+              <p className='text-[15px] mt-[3px]'>Ryan Holiday</p>
             </div>
           </div>
         </div>

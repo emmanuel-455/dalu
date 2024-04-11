@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import view from "../asset/viewplay.svg";
-import Music from "../asset/game thumbnail (2).png"
+//import Music from "../asset/game thumbnail (2).png"
 
 function HomeContent() {
 
@@ -119,15 +119,11 @@ function HomeContent() {
               <a className='flex' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
             </p>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
-            {songInfo.songImageUrl ? (
               <img className='w-[60px]' src={songInfo.songImageUrl} alt="" />
-            ) : (
-              <img className='w-[60px]' src={Music} alt="Music" />
-            )}
               <div className='ml-[17px]'>
                 <p className=' inline-block px-[6px] py-[3px] bg-[#E6E6E6] text-[11px]'>Listened to</p>
-                {songInfo.songName ? (<p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>) : (<p className='text-[15px] font-bold mt-[5px]'>The less I know the better</p>)}
-                {songInfo.songArtist ? (<p className='text-[15px] mt-[3px]'>{songInfo.songArtist}</p>) : (<p className='text-[15px] mt-[3px]'>Tame Impala</p>)}
+                <p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>
+                <p className='text-[15px] mt-[3px]'>{songInfo.songArtist}</p>
               </div>
             </div>
           </div>
