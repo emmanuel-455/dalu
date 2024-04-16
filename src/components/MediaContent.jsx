@@ -76,9 +76,9 @@ function MediaContent() {
     };
   
     let access_token;
-    const client_id = 'de4e099723ec4964a2b53eb340ba8672';
-    const client_secret = '1fe4a452c4244f1381dcee4c9fcdffca';
-    const refresh_token = 'AQBt847kZdrKdZkycXZmMrrK-zgmEnHbvGdFLRXkHI0aEK4HYN_wrq9EMF9CxLBqi9_VGMaLDGbcu7rgDBDYNL0lBt9GTWEvIM67NOlGGtvenmAifTT5OfZY017DGrJv8IY';
+    const client_id = '54f1685fdce140b3bcbf2c8642050242';
+    const client_secret = '3dcb34e6656a4163bca673a9cf8cac57';
+    const refresh_token = 'AQB5aMS34n3dVvvo2n0YxcOmWAFBzbF-EPKFTUK2uzih3jQsfD_S8ttYMsGhVP3SbndXjr9HRXTXc59Bcjzul_6XoAtXX8K9hDo3Hzda4nKukcYKLEY1LoQQsLZkRT-YiVM';
   
     const updateSongInfo = () => {
       getAccessToken()

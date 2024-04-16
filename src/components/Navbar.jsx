@@ -47,7 +47,7 @@ function Navbar() {
         
         <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "resume" ? "font-extrabold border-b-[3px]" : ""} w-[60px] border-black`}
             onClick={() => handleLinkClick("resume")}>
-          <Link to="/resume">resume</Link> 
+          <Link to="https://drive.google.com/file/d/1nU1EgJQT1kH1Y84fZ3kjh8YuZHGnaSID/view?usp=drivesdk">resume</Link> 
         </li>
         <li className={`py-[px] mb-[10px] text-[15px] ${activeLink === "email" ? "font-extrabold border-b-[3px]" : ""} w-[50px] border-black`}
             onClick={() => handleLinkClick("email")}>
