@@ -118,7 +118,7 @@ function HomeContent() {
             <div className='flex justify-between items-center'>
               <div className='bg-[#E6E6E6] w-[55%] h-[2px] mb-[5px]'></div>
               <p className='flex font-bold text-[15px] items-center justify-end'>
-              <a className='flex' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
+              <a className='flex text-nowrap pl-3' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
             </p>
             </div>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
