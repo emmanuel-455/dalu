@@ -94,7 +94,7 @@ function MediaContent() {
     updateSongInfo();
   
     // Set interval to refresh every 3 seconds
-    const interval = setInterval(updateSongInfo, 3000);
+    const interval = setInterval(updateSongInfo, 1000);
   
     // Clear interval on component unmount
     return () => clearInterval(interval);
