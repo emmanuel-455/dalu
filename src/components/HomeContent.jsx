@@ -101,7 +101,7 @@ function HomeContent() {
 
   return (
     <div className='flex justify-center items-center '>
-      <div className='w-[600px] pt-10 md:pt-[140px] md:pl-[120px]'>
+      <div className='w-[600px] '>
         <div className=''>
           <div className=' md:w-[80%]'>
             <h1 className='text-[15px] font-extrabold'>Creative Designer</h1>

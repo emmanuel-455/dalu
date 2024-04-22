@@ -6,14 +6,7 @@ import HomeContent from '../components/HomeContent';
 import Footer from '../components/Footer';
 
 function Home() {
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
+  
   return (
     <div className=''>
       <div className='px-[25px] md:flex'>
@@ -22,9 +15,11 @@ function Home() {
           <div className='hidden md:block'><Navbar /></div>
           <div className='md:hidden'><SideNavbar /></div> 
         </div>
-        <div>
+        <div className='pt-10 md:pt-[140px] md:pl-[120px]'>
+          <div className='h-screen'>
           <HomeContent />
-          <div className='absolute bottom-0 left-[15%] md:left-[40%]  text-[#adadad]'>
+          </div>
+          <div className='bottom-0 left-[15%] md:left-[40%]  text-[#adadad]'>
             <Footer />
           </div>
         </div>
