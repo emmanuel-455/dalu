@@ -13,7 +13,7 @@ function About() {
     <>
     <div className='pl-[25px] md:flex'>
       <div className='md:inline-block py-5 md:border-r md:w-[14rem] flex justify-between items-center'>
-        <Logo logo="chidalu ugwu" />
+        <Logo />
         <div className='hidden md:block'><Navbar /></div>
         <div className='md:hidden pr-[25px]'><SideNavbar /></div> 
       </div>

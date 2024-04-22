@@ -12,7 +12,7 @@ function Work() {
     <>
       <div className='pl-[25px] md:flex'>
       <div className='md:inline-block md:border-r py-5 md:w-[14rem] flex justify-between items-center'>
-        <Logo logo="chidalu ugwu" />
+        <Logo />
         <div className='hidden md:block'><Navbar /></div>
         <div className='md:hidden pr-[25px]'><SideNavbar /></div> 
       </div>

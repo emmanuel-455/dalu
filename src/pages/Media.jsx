@@ -12,7 +12,7 @@ function Media(props) {
       <div className='px-[25px] md:flex'>
         {/* Sidebar */}
         <div className='md:inline-block py-5 md:border-r md:w-[14rem] flex justify-between items-center'>
-          <Logo logo="chidalu ugwu" />
+          <Logo />
           <div className='hidden md:block'><Navbar /></div>
           <div className='md:hidden'><SideNavbar /></div> 
         </div>
