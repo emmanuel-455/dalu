@@ -3,8 +3,8 @@ import React from 'react';
 function AboutContent(props) {
   return (
     <div>
-      <div className='md:w-[800px] md:pt-[140px]'>
-        <div className='md:pl-[120px]'>
+      <div className=''>
+        <div className=''>
           <div className='mt-7'>
             <h1 className="text-[20px] font-bold md:hidden">
               {props.header}

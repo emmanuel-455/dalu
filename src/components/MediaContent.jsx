@@ -101,8 +101,8 @@ function MediaContent() {
   }, []);
 
   return (
-    <div className='md:pl-[120px]'>
-      <div className=' mt-9 md:pt-[100px]'>
+    <div className=''>
+      <div className=' mt-9'>
         <h1 className='font-extrabold mb-4 text-[20px] md:text-[24px]'>media diary</h1>
         
 
@@ -129,7 +129,7 @@ function MediaContent() {
         </div>
         
         <div className='mb-5'>
-          <div className='flex items-center md:w-[700px]'>
+          <div className='flex items-center '>
             <img className='w-[100px] md:w-[100px]' src={Game} alt="" />
             <div className='ml-5 md:ml-[30px]'>
               <p className='bg-[#E6E6E6] px-2 py-1 inline text-[13px]'>Game</p>

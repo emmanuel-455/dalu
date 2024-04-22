@@ -7,23 +7,26 @@ import Footer from '../components/Footer';
 
 function About() {
   // Disable scrolling
-  document.body.style.overflow = 'hidden';
+  //document.body.style.overflow = 'hidden';
 
   return (
+    <>
     <div className='pl-[25px] md:flex'>
       <div className='md:inline-block py-5 md:border-r md:w-[14rem] flex justify-between items-center'>
         <Logo logo="chidalu ugwu" />
         <div className='hidden md:block'><Navbar /></div>
         <div className='md:hidden pr-[25px]'><SideNavbar /></div> 
       </div>
-      <AboutContent
-        header="about"
-       
-      />
-      <div className='absolute bottom-0 left-[15%] md:left-[40%]  text-[#adadad]'>
+        <div className='md:pl-[120px]  md:w-[800px] md:pt-[140px]'>
+          <div className='h-screen'><AboutContent header="about" /></div>
+          <div className='bottom-0 left-[15%] md:left-[40%] text-[#adadad]'>
         <Footer />
       </div>
-    </div>
+        </div>
+      </div>
+      
+    </>
+    
   );
 }
 
