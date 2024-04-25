@@ -108,7 +108,7 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            <div className='relative'>
+            <div className='relative -z-10'>
               <div className='w-[14px] blur-[0.6px] absolute bg-gray-500 opacity-95 h-full'></div>
               <div className='w-full blur-[0.6px] absolute bg-gray-500 opacity-95 h-[14px]'></div>
               <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="Music" />

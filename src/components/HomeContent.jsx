@@ -122,7 +122,7 @@ function HomeContent() {
             </p>
             </div>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
-              <div className="relative">
+              <div className="relative -z-10">
                 <div className='w-[8px] blur-[0.6px] absolute bg-gray-500 opacity-95 h-full'></div>
                 <div className='w-full blur-[0.6px] absolute bg-gray-500 opacity-95 h-[8px]'></div>
                 <img className='w-[60px]' src={songInfo.songImageUrl} alt="" />
