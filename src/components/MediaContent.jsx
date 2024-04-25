@@ -108,7 +108,15 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="Music" />
+            <div className='relative'>
+              <div className='w-[14px] blur-[0.6px] absolute bg-gray-500 opacity-95 h-full'></div>
+              <div className='w-full blur-[0.6px] absolute bg-gray-500 opacity-95 h-[14px]'></div>
+              <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="Music" />
+              <div className='w-full blur-[0.6px] absolute bg-gray-500 bottom-0 opacity-95 h-[14px]'></div>
+              <div className='w-[14px] blur-[0.6px] absolute top-0 right-0 bg-gray-500 opacity-95 h-full'>
+
+              </div>
+            </div>
             <div className='ml-5 md:ml-[30px]'>
               <p className='bg-[#E6E6E6] px-2 py-1 inline text-[13px]'>Music</p>
               <p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>
