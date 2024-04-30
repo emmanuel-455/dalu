@@ -112,7 +112,7 @@ function MediaContent() {
   <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', backdropFilter: 'blur(5px)' }}>
     {/* Empty div to hold the background image */}
               </div>
-              <div className=' absolute opacity-75 w-full h-full bg-[#9c9c9c]'></div>
+              <div className=' absolute opacity-80 w-full h-full bg-[#888888]'></div>
   <img className='backdrop-blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px] md:w-[75px]' src={songInfo.songImageUrl} alt="Music" />
 </div>
 
