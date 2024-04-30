@@ -108,7 +108,7 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            <div className='relative w-[100px] h-[100px]'>
+            <div className='relative -z-10 w-[100px] h-[100px]'>
   <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', backdropFilter: 'blur(5px)' }}>
     {/* Empty div to hold the background image */}
               </div>
