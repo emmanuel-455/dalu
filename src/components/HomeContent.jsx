@@ -125,6 +125,7 @@ function HomeContent() {
                 <div className='relative -z-10 w-[60px] overflow-hidden h-[60px]'>
                 <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', filter: 'blur(10px)' }}>
                 </div>
+                <div className=' absolute opacity-30 w-full h-full bg-[#000000]'></div>
                 <img className='backdrop-blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[40px] w-[40px]' src={songInfo.songImageUrl} alt="Music" />
                 
               
