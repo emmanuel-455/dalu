@@ -108,11 +108,11 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            <div className='relative -z-10 w-[100px] h-[100px]'>
-              <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', backdropFilter: 'blur(5px)' }}>
+            <div className='relative -z-10 w-[100px] overflow-hidden h-[100px]'>
+              <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', filter: 'blur(10px)' }}>
               {/* Empty div to hold the background image */}
               </div>
-              <div className=' absolute opacity-80 w-full h-full bg-[#888888]'></div>
+              {/* <div className=' absolute opacity-80 w-full h-full bg-[#888888]'></div> */}
              <img className='backdrop-blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px] md:w-[75px]' src={songInfo.songImageUrl} alt="Music" />
             </div>
 
