@@ -108,15 +108,15 @@ function MediaContent() {
 
         <div className='mb-5'>
           <div className='flex items-center md:w-[700px]'>
-            <div className='relative -z-10'>
-              <div className='w-[14px] blur-[0.6px] absolute bg-gray-500 opacity-95 h-full'></div>
-              <div className='w-full blur-[0.6px] absolute bg-gray-500 opacity-95 h-[14px]'></div>
-              <img className='w-[100px] md:w-[100px]' src={songInfo.songImageUrl} alt="Music" />
-              <div className='w-full blur-[0.6px] absolute bg-gray-500 bottom-0 opacity-95 h-[14px]'></div>
-              <div className='w-[14px] blur-[0.6px] absolute top-0 right-0 bg-gray-500 opacity-95 h-full'>
-
+            <div className='relative w-[100px] h-[100px]'>
+  <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', backdropFilter: 'blur(5px)' }}>
+    {/* Empty div to hold the background image */}
               </div>
-            </div>
+              <div className=' absolute opacity-75 w-full h-full bg-[#9c9c9c]'></div>
+  <img className='backdrop-blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px] md:w-[75px]' src={songInfo.songImageUrl} alt="Music" />
+</div>
+
+
             <div className='ml-5 md:ml-[30px]'>
               <p className='bg-[#E6E6E6] px-2 py-1 inline text-[13px]'>Music</p>
               <p className='text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>
