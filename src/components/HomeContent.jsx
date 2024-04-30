@@ -122,13 +122,13 @@ function HomeContent() {
             </p>
             </div>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
-              <div className="relative -z-10">
-                <div className='w-[8px] blur-[0.6px] absolute bg-gray-500 opacity-95 h-full'></div>
-                <div className='w-full blur-[0.6px] absolute bg-gray-500 opacity-95 h-[8px]'></div>
-                <img className='w-[60px]' src={songInfo.songImageUrl} alt="" />
-                <div className='w-full blur-[0.6px] absolute bg-gray-500 bottom-0 opacity-95 h-[8px]'></div>
-              <div className='w-[8px] blur-[0.6px] absolute top-0 right-0 bg-gray-500 opacity-95 h-full'></div>
-              </div>
+                <div className='relative -z-10 w-[60px] overflow-hidden h-[60px]'>
+                <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', filter: 'blur(10px)' }}>
+                </div>
+                <img className='backdrop-blur-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[40px] w-[40px]' src={songInfo.songImageUrl} alt="Music" />
+                
+              
+                </div>
               <div className='ml-[17px]'>
                 <p className=' inline-block px-[6px] py-[3px] bg-[#E6E6E6] text-[11px]'>Listened to</p>
                 <p className=' line-clamp-4 text-[15px] font-bold mt-[5px]'>{songInfo.songName}</p>
