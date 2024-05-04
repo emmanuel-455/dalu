@@ -122,7 +122,7 @@ function HomeContent() {
             </p>
             </div>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
-                <div className='relative -z-10 w-[60px] overflow-hidden h-[60px]'>
+                <div className='relative -z-10 w-[60px] overflow-hidden h-[60px] flex-shrink-0'>
                 <div className='absolute  inset-0' style={{ backgroundImage: `url(${songInfo.songImageUrl})`, backgroundSize: 'cover', filter: 'blur(10px)' }}>
                 </div>
                 <div className=' absolute opacity-30 w-full h-full bg-[#000000]'></div>
