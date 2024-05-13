@@ -107,18 +107,20 @@ function HomeContent() {
             <h1 className='text-[15px] font-extrabold'>Creative Designer</h1>
             <div className='mt-4 text-[15px]'>
               <p>Find me on</p>
-              <ul className="list-disc ml-8 mb-4" style={{ listStyleWidth: "1px" }}>
-                <li><a href="https://www.are.na/chidalu-u/channels">Are.na</a></li>
-                <li><a href="https://twitter.com/lynxz000">Twitter</a></li>
-                <li><a href="https://www.read.cv/lynxz">Read.cv</a></li>
-                <li><a href="https://dribbble.com/leo_lynxz/shots">Dribbble</a></li>
-                <li><a href="https://instagram.com/lynxz000">Instagram</a></li>
+              <ul className="list-disc underline ml-8 mb-4" style={{ listStyleWidth: "1px" }}>
+                <li><a href="https://www.are.na/chidalu-u/channels" target='_blank'>Are.na</a></li>
+                <li><a href="https://twitter.com/lynxz000" target='_blank'>Twitter</a></li>
+                <li><a href="https://www.read.cv/lynxz" target='_blank'>Read.cv</a></li>
+                <li><a href="https://dribbble.com/leo_lynxz/shots" target='_blank'>Dribbble</a></li>
+                <li><a href="https://instagram.com/lynxz000" target='_blank'>Instagram</a></li>
               </ul>
             </div>
             <div className='flex justify-between items-center'>
-              <div className='bg-[#E6E6E6] w-[55%] h-[2px] mb-[5px]'></div>
+              <div className='bg-[#E6E6E6] w-[55%] h-[2px]'></div>
               <p className='flex font-bold text-[15px] items-center justify-end'>
-              <a className='flex text-nowrap pl-3' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
+                <div>
+                <a className='flex justify-center items-center text-nowrap pl-3' href="./work">View my work<img className='ml-2' src={view} alt="" /></a>
+              </div>
             </p>
             </div>
             <div className='flex mt-[61px] items-start border-2 border-[E5E5E5] px-[15px] py-[15px] py'>
