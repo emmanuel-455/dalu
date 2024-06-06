@@ -4,6 +4,7 @@ import Movie from "../asset/game thumbnail.png";
 import Game from "../asset/game thumbnail (3).png";
 import Book from "../asset/game thumbnail (4).png";
 
+
 function MediaContent() {
   const [songInfo, setSongInfo] = useState({
     songName: "",
